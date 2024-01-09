@@ -5,8 +5,10 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import 'flatpickr/dist/themes/material_blue.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+@import url('./1-timer.css');
+@import url('2-snackbar.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
