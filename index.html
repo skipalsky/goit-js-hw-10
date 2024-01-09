@@ -2,84 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-10</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-322d52e2.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/index-3109e282.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <div class="container">
+  <div class="clock-wrapper">
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+  </div>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+  <div class="timer">
+    <div class="field">
+      <span class="value" data-days>00</span>
+      <span class="label">Days</span>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="field">
+      <span class="value" data-hours>00</span>
+      <span class="label">Hours</span>
+    </div>
+    <div class="field">
+      <span class="value" data-minutes>00</span>
+      <span class="label">Minutes</span>
+    </div>
+    <div class="field">
+      <span class="value" data-seconds>00</span>
+      <span class="label">Seconds</span>
     </div>
   </div>
-</section>
+</div>
+
+    <form class="form">
+  <label>
+    Delay (ms)
+    <input type="number" name="delay" required min="0" />
+  </label>
+
+  <fieldset>
+    <legend>State</legend>
+    <label>
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label>
+      <input type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button type="submit">Create notification</button>
+</form>
 
 
+    
     
   </body>
 </html>
